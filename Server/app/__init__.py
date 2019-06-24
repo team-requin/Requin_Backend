@@ -1,6 +1,5 @@
 from flask import Flask
-
-from views import Router
+from .views import Router
 
 def create_app(*config_cls):
     flask_app = Flask(__name__)
