@@ -1,6 +1,6 @@
-from flask_restful import Resource
+from app.views.base import BaseResource
 
-class Index(Resource):
+class Index(BaseResource):
     def get(self):
         return {
                 'TESTKEY':'TESTVALUE'
